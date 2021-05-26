@@ -72,6 +72,8 @@ if (C1toC2==true) {
 	RegisterFilesChannelAToChannelB(inDir, outDir);
 }
 
+print("Done");
+
 setBatchMode(false);
 
 function SingleChannelImageRegistration(inDir, outDir) {

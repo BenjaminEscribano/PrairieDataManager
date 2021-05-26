@@ -30,6 +30,7 @@ setBatchMode(false);
 
 function MeanGrayValueExtraction(inDir, outDir) {
 	run("Set Measurements...", "mean redirect=None decimal=3");
+	run("Input/Output...", "jpeg=85 gif=-1 file=.csv");
 	list = getFileList(inDir);
 	for (i=0; i<list.length; i++) {
 		if (endsWith(list[i], "/")) {

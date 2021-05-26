@@ -10,7 +10,6 @@ Dialog.addChoice("", items, "C1_Reg.tif");
 Dialog.addSlider("F0 Start Slice", 1, 9999, 1);
 Dialog.addSlider("F0 Stop Slice", 1, 9999, 100);
 Dialog.addCheckbox("Generate Heatmap", true);
-Dialog.addMessage("Delete Files:");
 
 Dialog.show();
 
@@ -35,8 +34,9 @@ else {
 
 setBatchMode(true);
 if (GenDelta==true) {
-	NormalizedFluorescenceChangeStack(outDir);
+	NormalizedFluorescenceChangeStack(inDir, outDir);
 }
+print("Done");
 setBatchMode(false);
 
 function NormalizedFluorescenceChangeStack(inDir, outDir) {

@@ -50,3 +50,4 @@ function RecursiveBatchProcessing(inDir, outDir) {
 		}
 	}
 }
+print("Done");

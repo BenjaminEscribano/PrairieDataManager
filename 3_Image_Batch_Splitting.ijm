@@ -33,6 +33,7 @@ setBatchMode(true);
 if (ChSplitKeep==true) {
 	SplitChannelsAndKeep(inDir, outDir);
 }
+print("Done");
 setBatchMode(false);
 
 function SplitChannelsAndKeep(inDir, outDir) {
@@ -52,3 +53,4 @@ function SplitChannelsAndKeep(inDir, outDir) {
 		}
 	}
 }
+
